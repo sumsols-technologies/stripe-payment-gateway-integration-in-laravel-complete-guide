@@ -1,11 +1,7 @@
 
 # Integerate Stripe Payment Gateway In Laravel
 
-This tutorial is about how to integerate with Stripe using laravel in Urdu/Hindi
-
-## Url
-
-Complete Project Source uploaded at Git
+Complete source code for Stripe payment gateway integration with laravel
 
 ## Stripe Website
 
@@ -100,3 +96,7 @@ Make Methods in FrontendCheckoutController
 ```bash
     * 127.0.0.1:8000/
 ```
+
+
+## Credits
+[Sumsols Technologies](https://sumsols.com/)
