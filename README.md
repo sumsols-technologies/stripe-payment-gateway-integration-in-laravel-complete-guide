@@ -1,14 +1,16 @@
 
 # Integerate Stripe Payment Gateway In Laravel
+This video is about how to integrate stripe payment gateway in laravel.
 
-Complete source code for Stripe payment gateway integration with laravel
+## Demo Video Guide can be seen by the link below in Urdu/Hindi.
+[https://youtu.be/75rojUx3mzE](https://youtu.be/75rojUx3mzE)
 
 ## Stripe Website
 
 Go to stripe website and login to Stripe_developer
 
 ```bash
-    * https://dashboard.stripe.com/test 
+    https://dashboard.stripe.com/test 
 ```
 
 
@@ -17,9 +19,9 @@ Go to stripe website and login to Stripe_developer
 Go to stripe website and login to Stripe_developer
 
 ```bash
-    * https://dashboard.stripe.com/test 
+    https://dashboard.stripe.com/test 
 
-    * Copy Publishable_Key and Stripe_Secret located at bottom right
+    Copy Publishable_Key and Stripe_Secret located at bottom right
 ```
 
 ## Env
@@ -27,9 +29,9 @@ Go to stripe website and login to Stripe_developer
 Go to env file and paste **Publishable_Key** and **Stripe_Secret**
 
 ```bash
-    * StripeKey = "YOUR STRIPE PUBLISHABLE KEY"
+    StripeKey = "YOUR STRIPE PUBLISHABLE KEY"
 
-    * StripeSecret = "YOUR STRIPE SECRET KEY"
+    StripeSecret = "YOUR STRIPE SECRET KEY"
 
 ```
 
@@ -39,7 +41,7 @@ Go to env file and paste **Publishable_Key** and **Stripe_Secret**
 Install Laravel project by running this command in cmd
 
 ```bash
-    * composer create-project --prefer-dist laravel/laravel StripePayment 
+    composer create-project --prefer-dist laravel/laravel StripePayment 
 ```
 
 ## Installation Stripe Package
@@ -47,7 +49,7 @@ Install Laravel project by running this command in cmd
 Install Stripe Package by running this command in cmd
 
 ```bash
-    * composer require stripe/stripe-php 
+    composer require stripe/stripe-php 
 ```
 
 ## Route
@@ -55,7 +57,7 @@ Install Stripe Package by running this command in cmd
 Make Following route files in [routes/web/]
 
 ```bash
-    * Route::post('place-order-with-stripe','FrontendCheckoutController@stripeorder');
+    Route::post('place-order-with-stripe','FrontendCheckoutController@stripeorder');
 ```
 
 ## Controller
@@ -63,7 +65,7 @@ Make Following route files in [routes/web/]
 Make a controller by running this command
 
 ```bash
-    * php artisan make:controller FrontendCheckoutController
+    php artisan make:controller FrontendCheckoutController
 ```
 
 ## Use
@@ -71,9 +73,9 @@ Make a controller by running this command
 Use these lines at bottom of namespace
 
 ```bash
-    * use Stripe\Charge;
+    use Stripe\Charge;
     
-    * use Stripe\Stripe;
+    use Stripe\Stripe;
 ```
 
 
@@ -82,19 +84,19 @@ Use these lines at bottom of namespace
 Make Methods in FrontendCheckoutController
 
 ```bash
-    * stripeorder
+    stripeorder
 ```
 
 ## Finally! make payment by running this command in Compand Prompt 
 
 ```bash
-    * php artisan serve
+    php artisan serve
 ```
 
 ## Run this URL 
 
 ```bash
-    * 127.0.0.1:8000/
+    127.0.0.1:8000/
 ```
 
 
